@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column; /* Yatay düzeni kaldır ve sadece dikey düzen kullan */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    background-image: url(../beyzaa/images/IMG_7266.jpg);
+}
+
+.container {
+    text-align: center;
+}
+
+.fun-button {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #c65294;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fun-button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+}
