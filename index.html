@@ -66,6 +66,11 @@
             // Butonu gizle
             document.getElementById('funButton').style.display = 'none';
         }
+        
+        // Kullanıcı etkileşimi olmadan otomatik oynatma politikalarını etkilemek için bir tetikleyici ekleyelim.
+        document.body.addEventListener('touchstart', function() {
+            document.getElementById('funButton').removeEventListener('click', startVideo);
+        });
     </script>
 
     <!-- Bootstrap JS ve Popper.js için gerekli CDN'ler -->
